@@ -1,0 +1,12 @@
+<div class="col-md-12">
+  <div class="card" style="width: 20rem">
+    <div class="card-header">
+      {{element.name}}
+    </div>
+    <ul class="list-group">
+      <p><b *ngIf="element.type === 'server'" style="color:red">{{element.content}} </b> </p>
+      <p><em *ngIf="element.type === 'blueprint'" style="color:blue">{{element.content}} </em> </p>
+    
+    </ul>
+  </div>
+ </div>
